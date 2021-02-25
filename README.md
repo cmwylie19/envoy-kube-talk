@@ -1,4 +1,5 @@
 # Frontend Proxy
+[slide deck](https://docs.google.com/presentation/d/17_IBwR4EoDFQ67o1lq-vzJQ8-lY_We_j5BPpPfi0JvU/edit?usp=sharing)   
 During this demo we are going to deploy a front Envoy and a couple of services coloated with a running service Envoy.
 
 The three containers will be deployed inside a virtual network called enovymesh using docker-compose.
@@ -52,4 +53,5 @@ When Envoy runs, it also attaches an `admin` to your desired port. We have `admi
 docker-compose exec front-envoy /bin/bash
 
 curl localhost:8001/server_info
+curl localhost:8001/stats
 ```
